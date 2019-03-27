@@ -98,7 +98,7 @@ export class CommitList extends React.Component<ICommitListProps, {}> {
     const top = Math.floor(scrollTop / RowHeight)
     const bottom = top + numberOfRows
     this.props.onScroll(top, bottom)
-
+    console.log("Changed!");
     // Pass new scroll value so the scroll position will be remembered (if the callback has been supplied).
     if (this.props.onCompareListScrolled != null) {
       this.props.onCompareListScrolled(scrollTop)
